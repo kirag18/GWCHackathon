@@ -7,17 +7,16 @@
 
 h1 {
   margin: 2px auto;
-  text-decoration: underline;
+  text-decoration: none;
   text-align: center;
 }
 body {
-  font-family: "Merienda";
-  background-color: blanchedalmond;
-  justify-content: center;
+  font-family: "Arial";
+
 }
 nav {
+  background-color: rgba(5, 24, 135, 0.845);
   margin: 2px auto;
-  max-width: 700px;
   padding: 3px 3px;
   border-style: dotted;
   border-color: black;
@@ -26,8 +25,9 @@ nav {
 }
 nav ul {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: flex-end;
   width: 100%;
+  margin: 5px, 5px;
 }
 nav li {
   list-style-type: none;
@@ -37,11 +37,14 @@ nav li {
 
 .links:hover {
   border-radius: 10px;
-  background-color: rgba(179, 158, 104, 0.37);
+  background-color: rgba(144, 23, 168, 0.37);
 }
 
+.links:hover a{
+  color: rgb(221, 0, 255);
+}
 nav a {
-  color: rgba(182, 132, 38, 0.701);
+  color: white;
   text-decoration: none;
   font-size: 20px;
 }
@@ -52,13 +55,13 @@ ul li ul.dropdown li{
 }
 ul li ul.dropdown{
   width: 120px;
-  background-color: #e5cda9;
+  background-color: #371bd7;
   position: absolute;
   z-index: 999;
   display: none;
 }
 ul li ul.dropdown li:hover{
-  background-color: #e1a347;
+  background-color: rgba(5, 24, 135, 0.845);
   
 }
 ul li:hover ul.dropdown{
@@ -83,7 +86,7 @@ ul li ul.dropdown{
 }
 
 hr {
-  background-color: orange;
+  background-color: rgb(0, 21, 255);
   width: 100%;
 }
 .blog-post {
@@ -100,9 +103,9 @@ hr {
   justify-content: center;
   gap:30px;
   align-items: center;
-  background-color: #f5d6a8;
+   background-color: #1e4bbe7f;
   border-radius: 10px;
-  border-style: dotted;
+  border-style: dotted; 
 }
 
 .wrong, .correct{
@@ -140,17 +143,17 @@ hr {
 }
 .drop{
   height: 40%;
-  background-color: #f5d6a8; 
+  background-color: #5576fa; 
   color: white;
   border: none;
   padding: 12px 24px;
   border-radius: 8px; 
   transition: background 0.3s, transform 0.2s;
-  box-shadow: 3px 3px 10px #dcad2e;
+  box-shadow: 3px 3px 10px #b022f1;
   
 }
 .drop:hover{
-  background-color: #f9cd8b; 
+  background-color: #4a4de6af; 
   transform: scale(1.05);
 }
 
@@ -158,3 +161,219 @@ hr {
   margin: auto;
   max-width: 850px;
 }
+
+#front-page-button {
+
+  display: block;
+  margin: 5px, auto;
+  background: linear-gradient(135deg, #1e3c72, #2a5298); 
+  border: none;
+  color: white;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  position: relative;
+  overflow: hidden;
+}
+
+#front-page-button:hover {
+  background: linear-gradient(135deg, #2a5298, #3b5998);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+#front-page-button:active {
+  transform: translateY(1px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#motto{
+  font-size: 50px;
+  font-family: "Merienda";
+
+}
+
+.floating{
+  width: 100px;
+  height: 100px;
+}
+
+.left{
+  float: left;
+  background-color: rgb(170, 61, 184);
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+}
+.right{
+  float: right;
+  background-color: rgb(170, 61, 184);
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+}
+
+
+#index-page-background{
+  background-image: url(blurryBack.avif);
+  background-color: rgb(186, 194, 249);
+  background-blend-mode: overlay;
+  background-size: cover;
+  height: 700px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+.resource-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Responsive grid */
+  gap: 20px;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.resource-card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.resource-card h3 {
+  font-size: 1.25rem;
+  color: #005f73;
+  margin-bottom: 15px;
+}
+
+.resource-card p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.resource-link {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #008CBA;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.resource-link:hover {
+  background-color: #005f73;
+  transform: scale(1.1);
+}
+
+.resource-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+}
+
+/*calculators form*/
+.run-calc {
+  background: linear-gradient(145deg, #6a8dff, #1e3c72);
+  border: none;
+  color: white;
+  padding: 12px 24px;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 30px;
+  outline: none;
+}
+
+.run-calc:hover {
+  background: linear-gradient(145deg, #1e3c72, #6a8dff);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2), 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+.run-calc:active {
+  transform: translateY(2px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.run-calc:focus {
+  outline: none;
+  border: 2px solid #6a8dff;
+}
+
+
+
+form {
+  width: 100%;
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+}
+
+label {
+  font-size: 14px;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box; 
+  outline: none;
+}
+
+input:focus {
+  border-color: #4e84c4;
+  box-shadow: 0 0 5px rgba(78, 132, 196, 0.5);
+}
+
+.run-calc {
+  background-color: #4e84c4;
+  color: white;
+  padding: 12px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.run-calc:hover {
+  background-color: #3e6c97;
+}
+
+.run-calc:active {
+  background-color: #2f5077;
+}
+
+br {
+  margin-bottom: 15px;
+}
+
+
+
+
+/* dfdjlfajld */
+

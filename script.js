@@ -9,9 +9,6 @@ for (let i = 0; i < rightAnswer.length; i++){
   
 }
 
-function wrongDisplay(x) {
-  document.getElementById("feedback"+Math.floor(x/2)).innerHTML = "Wrong!"+wrongSuggestion[x];
-}
 let wrongAnswer = document.querySelectorAll(".wrong");
 for (let i = 0; i < wrongAnswer.length; i++){
   wrongAnswer[i].addEventListener("click", function () {
