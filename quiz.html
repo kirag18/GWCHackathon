@@ -8,66 +8,77 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <h1>Wealth Beyond Borders</h1>
-  <nav>
-    <img id = "logo" src = "tempLogo.webp">
-    <ul>
-      <li class = "links"><a href="index.html">Home</a>
-      </li>
-      <li class = "links"><a href="about.html">Learn</a></li>
-      <li class = "links"><a href="quiz.html">Quiz</a></li>
-      <li class = "links"><a href="#">Calculators</a>
-        <ul class = "dropdown">
-          <li><a href="about.html">first</a></li>
-          <li><a href="about.html">first</a></li>
-          <li><a href="about.html">first</a></li>
+  <header>
+    <nav>
+        <div class="logo-container">
+          <div class="logo">
+            <img id  = "logo" src="logo.png" alt="Logo">
+          </div>
+            <div class="website-name">Wealth Beyond Borders</div>
+        </div>
+        
+        <ul class = "nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">Learn</a></li>
+          <li><a href="quiz.html">Quiz</a></li>
+          <li>
+            <a href="#">Calculators</a>
+            <ul class = "dropdown">
+              <li><a href="loan.html">Loans</a></li>
+              <li><a href="savings.html">Savings</a></li>
+              <li><a href="income.html">Income</a></li>
+            </ul>
+          </li>
+          <li><a href="resources.html">Resources</a></li>
         </ul>
-      </li>
-      <li class = "links"><a href="#">Resources</a></li>
-    </ul>
-  </nav>
+    </nav>
+</header>
+
   <div id = "quizPage">
-    <h3>question 1</h3>
+    <h3 class = "questionTitle"> What is a credit score, and why is it important?</h3>
     <div class = "quizQuestion">
-    <p>question 1 content here</p>
-      <button class = "wrong">answer 1</button>
-      <button class = "wrong">answer 2</button>
-      <button class = "correct">answer 3</button>
+    <img src="creditscore.jpg">
+      <button class = "wrong">A score given to you by your bank for saving money</button>
+      <button class = "wrong">A score given to you by your bank for saving money</button>
+      <button class = "correct">A number that measures your ability to repay loans</button>
       <div id = "feedback0"></div>
     </div>
-    <h3>question 2</h3>
+    <h3 class = "questionTitle">Which of the following is a good way to start building credit? </h3>
     <div class = "quizQuestion">
-      <p>question 2 content here</p>
-      <button class = "wrong">answer 1</button>
-      <button class = "correct">answer 2</button>
-      <button class = "wrong">answer 3</button>
+      <img src = "credito.jpeg">
+      <button class = "wrong">Open a credit card and never use it</button>
+      <button class = "correct">Make small purchases on a credit card and pay them off in full each month</button>
+      <button class = "wrong">Borrow money from friends and family</button>
       <div id = "feedback1"></div>
     </div>
-    <h3>question 3</h3>
+    <h3 class = "questionTitle">What does it mean to "live within your means"?</h3>
     <div class = "quizQuestion">
-      <p>question 3 content here</p>
-      <button class = "correct">answer 1</button>
-      <button class = "wrong">answer 2</button>
-      <button class = "wrong">answer 3</button>
+      <img src="61b2d33f39927afa72e5f57a28cc7c83.gif">
+      <button class = "correct"> Spending only what you can afford and saving the rest </button>
+      <button class = "wrong">Borrowing money from others to pay for things you want</button>
+      <button class = "wrong">Spending all your money as soon as you get it</button>
       <div id = "feedback2"></div>
     </div>
-    <h3>question 4</h3>
+    <h3 class = "questionTitle">What is the difference between a debit card and a credit card?</h3>
     <div class = "quizQuestion">
-      <p>question 4 content here</p>
-      <button class = "correct">answer 1</button>
-      <button class = "wrong">answer 2</button>
-      <button class = "wrong">answer 3</button>
+      <img src="CreditVsDebit.jpg">
+      <button class = "correct">Debit cards take money directly from your bank account; credit cards borrow money that you pay back later</button>
+      <button class = "wrong">Debit cards let you borrow money; credit cards use your own money</button>
+      <button class = "wrong">Debit cards are for shopping; credit cards are only for emergencies</button>
       <div id = "feedback3"></div>
     </div>
-    <h3>question 5</h3>
+    <h3 class = "questionTitle">What should you do if you're struggling to pay your bills?</h3>
     <div class = "quizQuestion">
-      <p>question 5 content here</p>
-      <button class = "wrong">answer 1</button>
-      <button class = "correct">answer 2</button>
-      <button class = "wrong">answer 3</button>
+      <img src="papers.jpg">
+      <button class = "wrong">Ignore the bills and hope they go away</button>
+      <button class = "correct">Contact your creditors to discuss payment options or get help</button>
+      <button class = "wrong">Borrow money from anyone without asking about interest rates</button>
       <div id = "feedback4"></div>
     </div>
   </div>
+  <footer>
+    <p>&copy; 2025 Wealth Beyond Borders. All rights reserved.</p>
+</footer>
   <script src = "script.js" ></script>
 </body>
 </html>

@@ -1,6 +1,4 @@
-
 const wrongSuggestions = ["think about the bank", "what about investment", "what about the stock market", "what about  stock market", "what about the s market","think about the bank", "what about investment", "what about  stock market", "what about the stock market", " about the stock market"]
-//TODO: rename these things to be correct feedback
 
 let rightAnswer = document.querySelectorAll(".correct");
 for (let i = 0; i < rightAnswer.length; i++){
@@ -31,3 +29,5 @@ for (let i = 0; i < dropArrows.length; i++){
     }
   })
 }
+
+

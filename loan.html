@@ -7,38 +7,58 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
 </head>
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 <body>
-  <h1>Wealth Beyond Borders</h1>
-  <nav>
-    <img id = "logo" src = "tempLogo.webp">
-    <ul>
-      <li class = "links"><a href="index.html">Home</a>
-      </li>
-      <li class = "links"><a href="about.html">Learn</a></li>
-      <li class = "links"><a href="quiz.html">Quiz</a></li>
-      <li class = "links"><a href="#">Calculators</a>
-        <ul class = "dropdown">
-          <li><a href="loan.html">Loans</a></li>
-          <li><a href="savings.html">Savings</a></li>
-          <li><a href="income.html">Income</a></li>
+  <header>
+    <nav>
+        <div class="logo-container">
+          <div class="logo">
+            <img id  = "logo" src="logo.png" alt="Logo">
+          </div>
+            <div class="website-name">Wealth Beyond Borders</div>
+        </div>
+        
+        <ul class = "nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">Learn</a></li>
+          <li><a href="quiz.html">Quiz</a></li>
+          <li>
+            <a href="#">Calculators</a>
+            <ul class = "dropdown">
+              <li><a href="loan.html">Loans</a></li>
+              <li><a href="savings.html">Savings</a></li>
+              <li><a href="income.html">Income</a></li>
+            </ul>
+          </li>
+          <li><a href="resources.html">Resources</a></li>
         </ul>
-      </li>
-      <li class = "links"><a href="resources.html">Resources</a></li>
-    </ul>
-  </nav>
-  <form>
-    <label>Loan Amount:</label>
-    <input placeholder="60000" required>
+    </nav>
+</header>
+  <div id = "all-loan-container">
+  <div class ="loans-form">
+    <h2 class = "formTitle">How big of a loan can I get?</h2>
+    <label>Maximum Monthly Payment:</label>
+    <input id = "monthlyPayment" placeholder="enter a number without a '$' here" >
     <br>
     <label>Term Length(years to pay off loan):</label>
-    <input type ="number" placeholder="10" required>
+    <input id = "yearsLen" type ="number" placeholder="enter a number here" >
     <br>
-    <label>Yearly Interest rate:</label>
-    <input placeholder="0.02" required>
+    <label>Yearly Interest rate(as a decimal):</label>
+    <input id = "yearlyInterest" placeholder="enter a decimal value here" >
     <br>
-    <button class = "run-calc">Submit</button>
-    <!-- <input type="submit"> -->
-  </form>
-  <script src = "script.js" ></script>
+    <button id = "loanSubmitter" class = "run-calc">Submit</button>
+    <div id = "loan-incomplete-error"></div>
+  </div>
+  <div id = "loan-results" class = "loans-form">
+    <div id = "maxLoan"></div>
+    <div id="combinedBar" style=""></div>
+
+  </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Wealth Beyond Borders. All rights reserved.</p>
+</footer>
+  <script src = "loans.js" ></script>
 </body>
 </html>

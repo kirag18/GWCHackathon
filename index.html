@@ -1,47 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Food Blog</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    
-    <nav>
-      <img id = "logo" src = "tempLogo.webp">
-      <h1 id = "name">Wealth Beyond Borders</h1>
-      <ul>
-        <li class = "links"><a href="index.html">Home</a>
-        </li>
-        <li class = "links"><a href="about.html">Learn</a></li>
-        <li class = "links"><a href="quiz.html">Quiz</a></li>
-        <li class = "links"><a href="#">Calculators</a>
-          <ul class = "dropdown">
-            <li><a href="loan.html">Loans</a></li>
-            <li><a href="savings.html">Savings</a></li>
-            <li><a href="income.html">Income</a></li>
-          </ul>
-        </li>
-        <li class = "links"><a href="resources.html">Resources</a></li>
-      </ul>
-    </nav>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="style.css">
 
-    <div id = "index-page-background">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo-container">
+              <div class="logo">
+                <img id  = "logo" src="logo.png" alt="Logo">
+              </div>
+                <div class="website-name">Wealth Beyond Borders</div>
+            </div>
+            
+            <ul class = "nav-links">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">Learn</a></li>
+              <li><a href="quiz.html">Quiz</a></li>
+              <li>
+                <a href="#">Calculators</a>
+                <ul class = "dropdown">
+                  <li><a href="loan.html">Loans</a></li>
+                  <li><a href="savings.html">Savings</a></li>
+                  <li><a href="income.html">Income</a></li>
+                </ul>
+              </li>
+              <li><a href="resources.html">Resources</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section class="hero">
+      <div class = "hero-content">
+        <div class = "center-image">
+          <img class = "smooth" src="LFJ-03-Community-Organizing-Uplifts-Immigrant-Students-Jim-Tsinganos-1800x1080-10192022.jpg" alt="Left Image">
+        </div>
+      </div>
+      <div class="home-image">
+        <div class="left-image">
+            <img class = "smooth" src="IMG_1376.png" alt="Left Image">
+        </div>
+        <div class="right-image">
+            <img  class = "smooth" src="IMG_5420.png" alt="Right Image">
+        </div>
+        <div  class = "second-right-image">
+          <img class = "smooth" src="ukraine.jpg" alt="second Right Image" >
+        </div>
+      </div>
       
+        <h1 id = "motto">Create a financial <br>future without limits</h1>
+        <p id="mini-motto"><em>⟣⟣Empowering Immigrants, Building Financial Futures⟢⟢</em></p>
+        <a href="about.html" class="btn">Learn More</a>
+        
+        
 
-    <h1 id = "motto"> Create a financial future without limits </h1>
-    <br>
-    <button id = "front-page-button">Get Started</button>
-<!-- 
-    <img class = "floating" src = "IMG_1376.png">
-    <img class = "floating" src = "IMG_4045.png">
-    <img class = "floating" src = "IMG_5420.png">
-    <img class = "floating" src = "IMG_6134.png">
-    <img class = "floating" src = "IMG_7008.png"> -->
+        
+    </section>
     
-    </div>
+    <section class="about-section">
+      <h2 id = "about">About Us</h2>
+      <div class="founder-container">
+        <div class="founder-image">
+          <img src="founder.jpg" alt="Founder">
+        </div>
+        <div class="thought-bubble">
+          <p>Hi, my name is Kira, and I am the founder of this organization. I started this company because I saw firsthand how many immigrants, especially those from Ukraine, were struggling to understand and manage their finances in a new country. As someone who grew up in Brooklyn, NY—the melting pot of melting pots—I was surrounded by diverse communities and witnessed the financial challenges immigrants faced. This sparked a deep passion in me to create an organization that would bridge the gap, offering the education, resources, and support necessary for immigrants to thrive financially in the U.S. </p>
+        </div>
+      </div>
+        <div id = "missionStatement">
+        <p>At Wealth Beyond Borders, we are dedicated to helping immigrants, 
+          especially those from Ukraine, navigate and understand the complex 
+          financial system in the United States. Our mission is to empower individuals 
+          and families by providing the tools, resources, and knowledge they need to 
+          build a secure and prosperous future in their new home. Whether it's understanding 
+          credit, budgeting, or making informed financial decisions, we aim to position our 
+          clients for long-term success and economic stability. Through educational programs, 
+          personalized support, and a community-driven approach, we strive to break down 
+          financial barriers and create opportunities for a brighter tomorrow.</p>
+        </div>
+        
+    </section>
+
     
-  </body>
+    
+    <footer>
+        <p>&copy; 2025 Wealth Beyond Borders. All rights reserved.</p>
+    </footer>
+</body>
 </html>
+
+

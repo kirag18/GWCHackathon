@@ -7,43 +7,66 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
 </head>
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 <body>
-  <h1>Wealth Beyond Borders</h1>
-  <nav>
-    <img id = "logo" src = "tempLogo.webp">
-    <ul>
-      <li class = "links"><a href="index.html">Home</a>
-      </li>
-      <li class = "links"><a href="about.html">Learn</a></li>
-      <li class = "links"><a href="quiz.html">Quiz</a></li>
-      <li class = "links"><a href="#">Calculators</a>
-        <ul class = "dropdown">
-          <li><a href="loan.html">Loans</a></li>
-          <li><a href="savings.html">Savings</a></li>
-          <li><a href="income.html">Income</a></li>
+  <header>
+    <nav>
+        <div class="logo-container">
+          <div class="logo">
+            <img id  = "logo" src="logo.png" alt="Logo">
+          </div>
+            <div class="website-name">Wealth Beyond Borders</div>
+        </div>
+        
+        <ul class = "nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">Learn</a></li>
+          <li><a href="quiz.html">Quiz</a></li>
+          <li>
+            <a href="#">Calculators</a>
+            <ul class = "dropdown">
+              <li><a href="loan.html">Loans</a></li>
+              <li><a href="savings.html">Savings</a></li>
+              <li><a href="income.html">Income</a></li>
+            </ul>
+          </li>
+          <li><a href="resources.html">Resources</a></li>
         </ul>
-      </li>
-      <li class = "links"><a href="resources.html">Resources</a></li>
-    </ul>
-  </nav>
-  <form>
+    </nav>
+  </header>
+  <div id = "all-income-container">
+  <div class = "income-form">
+    <h2 class = "formTitle">What's my yearly income?</h2>
     <label>hourly pay:</label>
-    <input placeholder="enter a value here" required>
+    <input id = "hourly" placeholder="enter a number without a '$' here" >
     <br>
     <label>Hours Per Week:</label>
-    <input type = "number" min = 0 max = 168 placeholder="40" size = 4 required>
+    <input id = "perWeek" type = "number" min = 0 max = 168 placeholder="40" size = 4 >
     <br>
     <label>Months working each year (Optional):</label>
-    <input placeholder="12" type = "number" min = 0 max = 12 size = 3>
+    <input id = "monthsAYear" placeholder="12" type = "number" min = 0 max = 12 size = 3>
     <br>
     <label>End of year bonus (Optional):</label>
-    <input placeholder="enter a value here">
+    <input id = "bonus" placeholder="enter a number without a '$' here"">
     <br>
     <label>Weekly Tips (Optional):</label>
-    <input placeholder="enter a value here">
+    <input id = "tip" placeholder="enter a number without a '$' here"">
     <br>
-    <button class = "run-calc">Submit</button>
-  </form>
+    <button id = "incomeSubmitter" class = "run-calc">Submit</button>
+    <div id = "income-incomplete-error"></div>
+  </div>
+  <div id = "income-results" class = "income-form">
+    <div id="tax-results">
+
+    </div>
+    <div id="myPlot" style=""></div>
+  </div>
+</div>
+<footer>
+  <p>&copy; 2025 Wealth Beyond Borders. All rights reserved.</p>
+</footer>
+  
+
     
     
   
@@ -51,6 +74,6 @@
 
 
   
-  <script src = "script.js" ></script>
+  <script src = "income.js" ></script>
 </body>
 </html>

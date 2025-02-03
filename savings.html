@@ -7,63 +7,66 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
 </head>
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+
 <body>
-  <h1>Wealth Beyond Borders</h1>
-  <nav>
-    <img id = "logo" src = "tempLogo.webp">
-    <ul>
-      <li class = "links"><a href="index.html">Home</a>
-      </li>
-      <li class = "links"><a href="about.html">Learn</a></li>
-      <li class = "links"><a href="quiz.html">Quiz</a></li>
-      <li class = "links"><a href="#">Calculators</a>
-        <ul class = "dropdown">
-          <li><a href="loan.html">Loans</a></li>
-          <li><a href="savings.html">Savings</a></li>
-          <li><a href="income.html">Income</a></li>
+  <header>
+    <nav>
+        <div class="logo-container">
+          <div class="logo">
+            <img id  = "logo" src="logo.png" alt="Logo">
+          </div>
+            <div class="website-name">Wealth Beyond Borders</div>
+        </div>
+        
+        <ul class = "nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">Learn</a></li>
+          <li><a href="quiz.html">Quiz</a></li>
+          <li>
+            <a href="#">Calculators</a>
+            <ul class = "dropdown">
+              <li><a href="loan.html">Loans</a></li>
+              <li><a href="savings.html">Savings</a></li>
+              <li><a href="income.html">Income</a></li>
+            </ul>
+          </li>
+          <li><a href="resources.html">Resources</a></li>
         </ul>
-      </li>
-      <li class = "links"><a href="resources.html">Resources</a></li>
-    </ul>
-  </nav>
+    </nav>
+</header>
 
-  <form>
-    <label>Starting Amount(Initial Deposit):</label>
-    <input placeholder="5000" required>
+  <div id = "all-savings-container">
+  <div class = "savings-form">
+    <h2 class = "formTitle">My Savings Account Balance</h2>
+    <label >Starting Amount(Initial Deposit):</label>
+    <input id = "base" placeholder="enter a number without a '$' here">
     <br>
-    <label>Monthly Deposit:</label>
-    <input placeholder="152.75" required>
+    <label >Monthly Deposit:</label>
+    <input id = "monthly" placeholder="enter a number without a '$' here">
     <br>
-    <label>Yearly Interest rate:</label>
-    <input placeholder="0.02" required>
+    <label >Yearly Interest rate(as a decimal):</label>
+    <input id = "savingsInterest" placeholder="enter a decimal value here">
     <br>
-    <label>Timeframe(years):</label>
-    <input type = "number" placeholder="20" required>
+    <label >Timeframe(years):</label>
+    <input id ="years" type = "number" placeholder="enter a number here">
     <br>
-    <button class = "run-calc">Submit</button>
-  </form>
+    <button id = "savingsSubmitter" class = "run-calc">Submit</button>
+    <div id = "saving-incomplete-error"></div>
+  </div>
+  <div id = "savings-results" class = "savings-form">
+    <div id = "savingsInfo"></div>
+    <div id="savingsAccountTracker" ></div>
 
-  <!-- <form>
-    <label for="starting-amount">Starting Amount (Initial Deposit):</label>
-    <input id="starting-amount" placeholder="5000" required>
-    <br>
-  
-    <label for="monthly-deposit">Monthly Deposit:</label>
-    <input id="monthly-deposit" placeholder="152.75" required>
-    <br>
-  
-    <label for="interest-rate">Yearly Interest Rate:</label>
-    <input id="interest-rate" placeholder="0.02" required>
-    <br>
-  
-    <label for="timeframe">Timeframe (years):</label>
-    <input id="timeframe" type="number" placeholder="20" required>
-    <br>
-  
-    <button class="run-calc">Submit</button>
-  </form> -->
+  </div>
+</div>
+<footer>
+  <p>&copy; 2025 Wealth Beyond Borders. All rights reserved.</p>
+</footer>
 
 
-  <script src = "script.js" ></script>
+
+
+  <script src = "savings.js" ></script>
 </body>
 </html>
